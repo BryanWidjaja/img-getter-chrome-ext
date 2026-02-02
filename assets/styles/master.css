@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Laurentian-Std";
+  src: url("../fonts/laurentian/Laurentian-Std-SemiBold-It.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: white;
+}
+
+body {
+  font-family: "Poppins", serif;
+  transition: all 0.5s;
+  width: 20rem;
+  height: 25rem;
+  background:
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(193, 240, 39, 0.25),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 75% 45%,
+      rgba(89, 156, 85, 0.35),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 55% 70%,
+      rgba(46, 136, 91, 0.35),
+      transparent 40%
+    ),
+    linear-gradient(
+      150deg,
+      #2b3c67,
+      #2c4c6c,
+      #485e96 20%,
+      #2e4f70,
+      #526578,
+      #32485f,
+      #052b51,
+      #233342
+    );
+  color: var(--white);
+}

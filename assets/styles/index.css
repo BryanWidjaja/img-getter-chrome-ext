@@ -1,0 +1,16 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.logo {
+  font-family: "Laurentian-Std", serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
