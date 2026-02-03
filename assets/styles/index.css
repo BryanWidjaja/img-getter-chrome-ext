@@ -14,3 +14,50 @@
   font-weight: 600;
   font-size: 2.5rem;
 }
+
+.tags-container {
+  width: 100%;
+  min-height: 4.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+  /* border: 0.01rem solid var(--white); */
+  background-color: #ffffff30;
+  border-radius: 0.75rem;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+#copy-btn {
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0.2rem;
+  background-color: #ffffff30;
+  border: none;
+  border-radius: 0.35rem;
+  display: flex;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+#copy-btn img {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1;
+}
+
+#copy-btn:hover {
+  background-color: #ffffff60;
+  cursor: pointer;
+}
+
+.tags-header {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}

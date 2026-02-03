@@ -3,7 +3,7 @@
   "description": "Get Image",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "clipboardWrite"],
   "action": {
     "default_popup": "./index.html"
   }
