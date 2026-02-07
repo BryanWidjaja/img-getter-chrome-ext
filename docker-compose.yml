@@ -1,0 +1,7 @@
+services:
+  ai-service:
+    build:
+      context: .
+      dockerfile: services/ai-service/Dockerfile
+    expose:
+      - "50051"

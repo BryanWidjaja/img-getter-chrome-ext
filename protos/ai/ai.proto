@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package ai;
+
+option go_package = "github.com/RarityValue/img-getter-chrome-ext/ai";
+
+service AIService {
+  rpc PredictHashtags (PredictRequest) returns (PredictResponse);
+}
+
+message PredictRequest {
+  bytes image_data = 1;
+}
+
+message PredictResponse {
+  repeated string hashtags = 1;
+}
