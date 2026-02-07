@@ -3,5 +3,20 @@ services:
     build:
       context: .
       dockerfile: services/ai-service/Dockerfile
-    expose:
-      - "50051"
+    networks:
+      - instatags-net
+  api-gateway:
+    build:
+      context: .
+      dockerfile: services/api-gateway/Dockerfile
+    depends_on:
+      - ai-service
+    environment:
+      - AI_SERVICE_ADDR=ai-service:50051
+      - GATEWAY_PORT=:8000
+    networks:
+      - instatags-net
+
+networks:
+  instatags-net:
+      driver: bridge
